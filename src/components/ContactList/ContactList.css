@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #7c3aed;
+  --delete-color: #dc2626;
+}
+
+input {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  width: 100%;
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #fff;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+
+.item p {
+  word-break: break-all;
+  max-width: 200px;
+}
+
+.deleteBtn {
+  cursor: pointer;
+  border: 1px solid var(--delete-color);
+  outline: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: var(--delete-color);
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+.edit {
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+.item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.6rem;
+}
+
+@media screen and (max-width: 440px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .item div,
+  button {
+    margin: 0.5rem 0;
+  }
+}
